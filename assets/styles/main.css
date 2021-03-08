@@ -1,8 +1,85 @@
+html{
+    scroll-behavior: smooth;
+}
+
 #home{
-    background-image: url("../images/deep_night_blur.png");
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+    background-color:rgba(12, 12, 12, 0);
+}
+
+#particles-js{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-image: url('');
     background-size: cover;
-    background-position: 0%;
-    background-blend-mode: color-dodge;
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    display: block;
+}
+
+.glow{
+    text-shadow: 0px 0px 0px #fff;
+    animation: Glow 4s ease-in-out 5s infinite forwards alternate-reverse;
+}
+
+.icon{
+    filter: invert(90%);
+    -webkit-filter: invert(90%);
+    width: 10vw;
+    max-width: 100px;
+}
+
+.item{
+    margin: 4%;
+    display: block;
+    text-shadow: 0px 0px 5px #fff;
+    transition-duration: 0.4s;
+    opacity: 1;
+}
+
+.item:hover{
+    opacity: 0.6;
+}
+
+.row{
+    justify-content: center;
+}
+
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background-color: #00000000;
+    z-index: 1000;
+}
+
+.background-blur{
+    backdrop-filter: blur(5px)
+}
+
+.background-grey{
+    background-color: rgba(100, 100, 100, 0.2);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.6); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0; 
+}
+
+@keyframes Glow{
+    0%{text-shadow: 0px 0px 0px #fff;}
+    100%{text-shadow: 0px 0px 20px #fff;}
 }
