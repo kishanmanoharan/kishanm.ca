@@ -1,0 +1,8 @@
+#home{
+    background-image: url("../images/deep_night_blur.png");
+    background-size: cover;
+    background-position: 0%;
+    background-blend-mode: color-dodge;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
