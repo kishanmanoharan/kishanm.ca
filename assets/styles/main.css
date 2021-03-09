@@ -3,8 +3,8 @@ html{
 }
 
 #home{
-    padding-top: 35vh;
-    padding-bottom: 35vh;
+    padding-top: 36vh;
+    padding-bottom: 36vh;
     background-color:rgba(12, 12, 12, 0);
 }
 
@@ -31,6 +31,10 @@ html{
     -webkit-filter: invert(90%);
     width: 10vw;
     max-width: 100px;
+}
+
+.arrow{
+    animation: Fade 4s ease-in-out 0s infinite forwards alternate-reverse;
 }
 
 .item{
@@ -82,4 +86,10 @@ html{
 @keyframes Glow{
     0%{text-shadow: 0px 0px 0px #fff;}
     100%{text-shadow: 0px 0px 20px #fff;}
+}
+
+@keyframes Fade{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
 }
