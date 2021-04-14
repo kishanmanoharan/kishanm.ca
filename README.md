@@ -9,3 +9,5 @@
 - Using the Basket framework. [Github - BasketCSS](https://github.com/Basket-CSS/basket)
 
 - Using particle.js for the animated background. [Github - particle.js](https://github.com/VincentGarreau/particles.js/)
+
+- Using highlight.js for code highlighting. [Github - highlight.js](https://github.com/highlightjs/highlight.js)
